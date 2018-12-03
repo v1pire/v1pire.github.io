@@ -1,58 +1,25 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>Главная страница</title>
-  
-  <style>
-   body {
-    background-image: url(images/bg.jpg); 
-	background-repeat: repeat-x;
-    background-color: #3b393a; /* Цвет фона */
-   }
-   .div_image
-   {
-    background-color: #e8e8e8; /* Цвет фона */
-    position: relative; 
-    top: 40px; 
-    width: 768px;
-    margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #660033; 
-    border-radius: 3px;
-    box-shadow: 0 0 1px 1px #333333;
-    box-sizing: border-box;
-    padding: 10 5 10 5;
-   
-   }
-   .div_logo
-   {
-   	width: 155;
-   	height: 55;
-   position: relative; 
-   top: 12px; 
-   left: 56px;
-   }
-  </style>
-  
-</head>
-<body>
-
-<div class = "div_logo">
-<img src="images/logo.png" width="150" height="45">
-</div>
-
-<div class = "div_image">
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-Тут будет моя визитка-сайт
-...печаль
-</div>
-
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | qwiz-web2</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/упф.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1067px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">qwiz-web2</div>
+      </div>
+    </div>
+  </body>
 </html>
